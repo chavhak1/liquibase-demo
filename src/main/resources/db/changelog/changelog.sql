@@ -1,6 +1,6 @@
 -- liquibase formatted sql
 
--- changeset chandantiwari:1715584481149-1
+-- changeset akash.chavhan:202501141-1
 -- preconditions onFail:MARK_RAN onError:MARK_RAN
 -- precondition-sql-check expectedResult:0 select count(*) from information_schema.tables where table_name='employee'
 CREATE TABLE `employee` (
@@ -12,13 +12,13 @@ CREATE TABLE `employee` (
 );
 -- rollback DROP TABLE `employee`;
 
--- changeset chandantiwari:1715584526242-1
+-- changeset akash.chavhan:202501142-1
 -- precondition-sql-check expectedResult:0 select count(*) from `employee`
-INSERT INTO `employee` (`emp_id`, `emp_company`, `emp_email`, `emp_name`) VALUES (1, 'Google', 'chandan.tiwari@google.com', 'Chandan Tiwari');
-INSERT INTO `employee` (`emp_id`, `emp_company`, `emp_email`, `emp_name`) VALUES (2, 'Accenture', 'rajat.kumar@Accenture.com', 'Rajat Kumar');
+INSERT INTO `employee` (`emp_id`, `emp_company`, `emp_email`, `emp_name`) VALUES (1, 'opus', 'akash.chavhan@opus.com', 'akash chavhan');
+INSERT INTO `employee` (`emp_id`, `emp_company`, `emp_email`, `emp_name`) VALUES (2, 'FIS', 'kiran.chavhan@fis.com', 'kiran chavhan');
 -- rollback TRUNCATE TABLE `employee`;
 
--- changeset chandantiwari:23123134
+-- changeset akash.chavhan:202501143
 CREATE TABLE `student` (
     `stu_id` INTEGER NOT NULL,
     `stu_school` VARCHAR(255),
@@ -28,5 +28,5 @@ CREATE TABLE `student` (
 );
 -- rollback DROP TABLE `student`;
 
--- changeset chandantiwari:564564354
+-- changeset akash.chavhan:202501144
 ALTER TABLE `student` ADD COLUMN `stu_marks` INTEGER;
