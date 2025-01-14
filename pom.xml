@@ -138,5 +138,15 @@
 			</plugin>
 		</plugins>
 	</build>
-
+	<profile>
+            <id>MySQL</id>
+            <properties>
+                <db.script>mysql</db.script>
+                <jpa.database>MYSQL</jpa.database>
+                <jdbc.driverClassName>com.mysql.cj.jdbc.Driver</jdbc.driverClassName>
+                <jdbc.url>jdbc:mysql://database-dev.c1i0i2cgwfwb.us-east-2.rds.amazonaws.com:3306/database_dev</jdbc.url>
+                <jdbc.username>amdin</jdbc.username>
+                <jdbc.password>admin123</jdbc.password>
+            </properties>
+	</profile>
 </project>
