@@ -6,12 +6,7 @@
 
     <!-- ChangeSet to include schema creation SQL file -->
     <changeSet id="1" author="akash.chavhan">
-        <sqlFile path="db.changelog-1.0.sql" relativeToChangelogFile="true"/>
-    </changeSet>
-
-    <!-- ChangeSet to include table creation SQL file -->
-    <changeSet id="2" author="akash.chavhan">
-        <sqlFile path="db.changelog-data-1.0.sql" relativeToChangelogFile="true"/>
+        <sqlFile path="changelog.sql" relativeToChangelogFile="true"/>
     </changeSet>
 
 </databaseChangeLog>
