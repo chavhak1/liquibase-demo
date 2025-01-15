@@ -10,7 +10,7 @@ CREATE TABLE `employee` (
 );
 -- rollback DROP TABLE `employee`;
 
--- changeset akash.chavhan:202501142-1
+-- changeset akash.chavhan:202501142-2
 -- precondition-sql-check expectedResult:0 select count(*) from `employee`
 INSERT INTO `employee` (`emp_id`, `emp_company`, `emp_email`, `emp_name`) VALUES (1, 'opus', 'akash.chavhan@opus.com', 'akash chavhan');
 INSERT INTO `employee` (`emp_id`, `emp_company`, `emp_email`, `emp_name`) VALUES (2, 'FIS', 'kiran.chavhan@fis.com', 'kiran chavhan');
@@ -19,7 +19,7 @@ INSERT INTO `employee` (`emp_id`, `emp_company`, `emp_email`, `emp_name`) VALUES
 INSERT INTO `employee` (`emp_id`, `emp_company`, `emp_email`, `emp_name`) VALUES (5, 'FIS223', 'salu.bhau@fis.com', 'salu bhau');
 -- rollback TRUNCATE TABLE `employee`;
 
--- changeset akash.chavhan:202501143
+-- changeset akash.chavhan:202501143-3
 CREATE TABLE `student` (
     `stu_id` INTEGER NOT NULL,
     `stu_school` VARCHAR(255),
@@ -29,5 +29,5 @@ CREATE TABLE `student` (
 );
 -- rollback DROP TABLE `student`;
 
--- changeset akash.chavhan:202501144
+-- changeset akash.chavhan:202501144-4
 ALTER TABLE `student` ADD COLUMN `stu_marks` INTEGER;
