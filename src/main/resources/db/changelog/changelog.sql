@@ -1,8 +1,6 @@
 -- liquibase formatted sql
 
 -- changeset akash.chavhan:202501141-1
--- preconditions onFail:MARK_RAN onError:MARK_RAN
--- precondition-sql-check expectedResult:0 select count(*) from information_schema.tables where table_name='employee'
 CREATE TABLE `employee` (
     `emp_id` INTEGER NOT NULL,
     `emp_company` VARCHAR(255),
