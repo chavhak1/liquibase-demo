@@ -14,6 +14,8 @@ CREATE TABLE `employee` (
 -- precondition-sql-check expectedResult:0 select count(*) from `employee`
 INSERT INTO `employee` (`emp_id`, `emp_company`, `emp_email`, `emp_name`) VALUES (1, 'opus', 'akash.chavhan@opus.com', 'akash chavhan');
 INSERT INTO `employee` (`emp_id`, `emp_company`, `emp_email`, `emp_name`) VALUES (2, 'FIS', 'kiran.chavhan@fis.com', 'kiran chavhan');
+INSERT INTO `employee` (`emp_id`, `emp_company`, `emp_email`, `emp_name`) VALUES (3, 'FIS12', 'ran.chahan@fis.com', 'ran chahan');
+INSERT INTO `employee` (`emp_id`, `emp_company`, `emp_email`, `emp_name`) VALUES (4, 'FIS23', 'kira.chavhan@fis.com', 'kira chavhan');
 -- rollback TRUNCATE TABLE `employee`;
 
 -- changeset akash.chavhan:202501143
